@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*重置样式*/
+.container-fluid{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+/*通用*/
+.border_gray{
+	border: #ddd 1px solid;
+}
+
+/*************** Banner *****************/
+.contact_banner{
+	background:url(../images/contact/contact_banner.jpg) no-repeat center center;
+	background-size: cover;-moz-background-size: cover;-webkit-background-size: cover;
+}
+.contact_banner h4, .contact_banner p {
+  color: #656866;letter-spacing: 2px;
+}
+.contact_banner h4{
+	letter-spacing: 5px;
+}
+
+/*************** 地址 *****************/
+.address_box{
+	height: 545px;background: #f4f4f4;
+}
+.address_content{
+	overflow: hidden;padding: 10px 20px;
+}
+.address_content h4{
+	line-height: 50px;padding-left: 30px;
+} 
+.dl-horizontal{
+	margin-left: -150px;
+}
+.dl-horizontal dt, .dl-horizontal dd{
+	line-height: 30px;
+}
+.dl-horizontal dt{
+	line-height: 25px;
+}
+.dl-horizontal dd{
+	word-break: break-all; word-wrap: break-word;
+}
+.dl-horizontal dt span{
+	display: inline-block;width: 5px;height: 5px;background: #b8b8b8;
+	border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;
+}
+.dl-horizontal dd span{
+	color: #656565;
+}
+.dl-horizontal dd .email{
+	color: #0cd710;
+}
+
+/*************** 关注我们  *****************/
+.attention_h4{
+	line-height: 40px;color: #0cd710;
+}
+.qrcode p{
+	line-height: 30px;padding-left: 45px;
+}
+.hotline{
+	height: 122px;line-height: 122px;text-align: center;
+}
+.hotline span{
+	display: inline-block;height: 40px;margin: 0 30px;border-left: #ddd 1px solid;vertical-align: middle;
+}
+
+/*************** 底部  *****************/
+.footer_box{
+	clear: both;
+}
+
+@media only screen and (min-width:768px) and (max-width: 1190px) {
+	.hotline{
+		line-height: 61px;
+	}
+	.hotline span{
+		height: 24px;
+	}
+}
+@media only screen and (max-width: 975px) {
+	.qrcode p{
+		padding-left: 0;text-align: center;
+	}
+}
+@media only screen and (max-width:768px){
+	.address_box{
+		height: auto;overflow: hidden;margin-bottom: 15px;
+	}
+	.address_box img{
+		width: 100%;
+	}
+	.address_content{
+		overflow: hidden;padding: 10px 20px;
+	}
+	.address_content h4{
+		line-height: 50px;padding-left: 0;
+	} 
+	.dl-horizontal{
+		margin-left: 0;
+	}
+	.dl-horizontal dt{
+		display: none;
+	}
+	.dl-horizontal dd{
+		line-height: 24px;
+	}
+	.qrcode img{
+		width: 100%;
+	}
+	.qrcode p{
+		padding-left: 0;text-align: center;
+	}
+	.hotline{
+		line-height: 122px;margin-bottom: 10px;
+	}
+	.hotline span{
+		height: 24px;
+	}
+}
+@media only screen and (max-width:668px){
+	.hotline{
+		line-height: 61px;
+	}
+}
+@media only screen and (max-width:378px){
+	.hotline{
+		line-height: 40px;
+	}
+}
+

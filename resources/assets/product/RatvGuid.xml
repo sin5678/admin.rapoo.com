@@ -1,0 +1,10 @@
+<Guid>
+  <signal>模拟信号</signal>
+  <digit>数字信号</digit>
+  <inputport>输入端口</inputport>
+  <outputport>输出端口 </outputport>
+  <workpressure>工作电压</workpressure>
+  <workcurrent>工作电流 </workcurrent>
+  <resolution>分辨率</resolution>
+  <tvstandard>支持TV标准</tvstandard>
+</Guid>

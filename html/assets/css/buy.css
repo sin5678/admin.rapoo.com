@@ -1,0 +1,30 @@
+.spaceh200{width: 10px;height: 200px;}
+.spaceh20{width: 10px;height: 20px;}
+.struggle_buy_container{width: 100%;min-height: 800px;background: #000 url(../images/buy/buy_bg.jpg) no-repeat;background-position: center;}
+.struggle_buy_container ul {list-style: none;padding: 0;margin: 0 auto;width:1000px;/*height: 40px;*/}
+.struggle_buy_container li {text-align: center;cursor: pointer;}
+.struggle_buy_container li.roundabout-in-focus {cursor: default;}
+.struggle_buy_container .struggle_buy_box {margin-top: 200px;}
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common{width:100%;position: relative; }
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .struggle_img{width: 100%;}
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .struggle_bg{width:54.55%;position: absolute;top:150px;left: 23%; }
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .xplrerTitle{width:90px;color: #6e6e6e;float: left;}
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .price{width: 60px;color: #41a932;float: right;}
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .titleBox{width: 150px;line-height: 40px;margin: 0 auto;overflow: hidden;}
+.struggle_buy_container .struggle_buy_box .struggle_xploer_common .buy{width: 150px;line-height: 40px;text-decoration:none;background: #41a932;color: #fff;display: block;text-align: center;margin: 0 auto;}
+.struggle_buy_container .struggle_buy_box .struggle_xploerg .struggle_bg{top:;}
+.struggle_buy_container .roundabout-in-focus .struggle_xploer_common a.buy{background: #41a932;color: #fff;text-decoration:none;-webkit-transition: all 1s ease;-o-transition: all 1s ease;transition: all 1s ease;}
+.struggle_buy_container .roundabout-in-focus .struggle_xploer_common .struggle_bg{top:200px;}
+#show{position:relative;margin:0 auto;}
+.item{position:absolute;height:200px;width:350px;cursor:pointer;}
+@media screen and (max-width:900px) {
+	.spaceh200{height: 80px;}
+	.struggle_buy_container{width: 100%;overflow: hidden;}
+	.struggle_buy_container .struggle_buy_box{margin-top: 0;}
+	.struggle_buy_container .struggle_buy_box{width: 100%;}
+	.struggle_buy_container .struggle_buy_box li{width:50%;height: auto;position: relative;overflow: hidden;float: left;padding: 10px 20px;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box; /* Safari */}
+}
+@media screen and (max-width:510px) {
+	.struggle_buy_container .struggle_buy_box li{width: 100%;height: auto;position: relative;overflow: hidden;margin: 20px 0;}
+}
+

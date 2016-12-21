@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>零度无人机</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name=apple-mobile-web-app-title content="零度无人机">
+	<meta name="Resource-type" content="Document" />
+	<link rel=apple-touch-icon-precomposed href="img/apple-touch-icon-57x57-precomposed.png" />
+	<link rel=apple-touch-startup-image sizes=768x1004 href="img/loading-768x1004.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="format-detection" content="telephone=yes"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/industrial.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top struggle_top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/logo.png" width="70"></a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="struggle_menu">
+						XPLORER
+						<div class="struggle_top_menuSlide" menuIndex="1">
+							<ul class="menuSlide_box">
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploer.png" width="100%" />
+										</div>
+										<span>XPLORER</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerV.png" width="100%" />
+										</div>
+										<span>XPLORER V</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerG.png" width="100%" />
+										</div>
+										<span>XPLORER G</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-VG</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-X</div>
+				</li>
+				<li>
+					<a href="support.html">支持</a>
+				</li>
+				<li>
+					<a href="activity.html">活动</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">论坛</a>
+				</li>
+				<li>
+					<a href="buy.html">购买</a>
+				</li>
+				<!--<li>
+					<a class="search_box" href="javascript:void(0)">
+						<input type="text" name="search" id="search" onfocus="" placeholder="XIRO" /> <i class="search_icon icon iconfont">&#xe640;</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"> <i class="icon iconfont">&#xf007c;</i>
+					</a>
+				</li>
+				-->
+				<li class="active country_slide">
+					<a href="javascript:void(0)">
+						<div class="country_select">
+							<img src="assets/images/1_zh_cn.png" width="100%"></div>
+						<div class="country_box">
+							<ul>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/1_zh_cn.png" width="100%"></div>
+									<span>简体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/2_zh_tw.png" width="100%"></div>
+									<span>繁体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/3_english.png" width="100%"></div>
+									<span>English</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/4_german.png" width="100%"></div>
+									<span>German</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/5_french.png" width="100%"></div>
+									<span>French</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/6_italian.png" width="100%"></div>
+									<span>Italian</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/7_spanish.png" width="100%"></div>
+									<span>Spanish</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/8_korean.png" width="100%"></div>
+									<span>Korean</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/9_japanese.png" width="100%"></div>
+									<span>Japanese</span>
+								</li>
+							</ul>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid fnav">
+	<div class="container">
+		<div class="product-nav">
+			<div class="pro-nav-box clearfix"><div class="brand-name">XPLORER</div><a href="https://shop129829987.taobao.com/?spm=2013.1.0.0.AbQ19Q" class="gotomall">立即购买</a></div>
+			<ul class="product-nav-list">
+				<li>
+					<a href="Industriail.html" class="active">工业设计</a>
+				</li>
+				<li>
+					<a href="flySystem.html">飞行系统</a>
+				</li>
+				<li>
+					<a href="telecontroller.html" >遥控器</a>
+				</li>
+				<li>
+					<a href="webAPP.html" >APP</a>
+				</li>
+				<li>
+					<a href="productG.html#page7">云台相机</a>
+				</li>
+				<li>
+					<a href="productvideo.html" >教学视频</a>
+				</li>
+			</ul>
+			<!-- <div><a href="javascript:void">立即购买</a></div> -->
+		</div>
+	</div>
+</div>
+<div class="struggle_industrial_container">
+	<div class="struggle_page1 section">
+		<div class="container struggle_page1_text struggle_page_box">
+			<h2 class="transiiton_way transition_delay5">棱角分明 打破常规</h2>
+			<p class="transiiton_way transition_delay2">线条延伸之处，尽是力与美的张扬，科技与工业美学的创新结合</p>
+		</div>
+		<div class="bottom_log transiiton_way transition_delay3"><img src="assets/images/industrial/flysystem_slide1_bottom.png" width="100%" alt=""></div>
+	</div>
+	<div class="struggle_page2 section">
+		<div class="struggle_page2_imgbox">
+			<img src="assets/images/industrial/xiro_Industriail_s2.jpg" width="100%" alt="">
+		</div>
+		<div class="struggle_page_box">
+			<h2 class="transiiton_way transition_delay2">模块组装 随心所欲</h2>
+			<p class="padtop15 transiiton_way transition_delay5">创新模块化设计，快速更迭产品性能</p>
+			<p class="transiiton_way transition_delay8">极速简装，体验到手即飞的智能时代</p>
+		</div>
+	</div>
+	<div class="struggle_page3 section">
+		<div class="struggle_page_box">
+			<h2 class="transiiton_way transition_delay8">有棱角 野个性</h2>
+			<p class="padtop15 transiiton_way transition_delay5">光影与线条的交错，引领外形设计前沿</p>
+			<p class="transiiton_way transition_delay2">独特喷涂装工艺，多道工序演绎高新材质</p>
+		</div>
+		<div class="struggle_box">
+			<div class="struggle_page3_imgBox transiiton_way">
+				<img src="assets/images/industrial/xiro_Industriail_s3_img.png" width="100%" alt="" />
+			</div>
+		</div>
+			
+	</div>
+	<div class="struggle_page4 section">
+		<div class="struggle_page_box">
+			<h2 class="transiiton_way transition_delay8">折叠脚架 轻便便携携</h2>
+			<p class="padtop15 transiiton_way transition_delay5">多角度调节脚架，避免云台与地面的接触</p>
+			<p class="transiiton_way transition_delay2">低端包含硅胶扣，有效减少高速下降带来的震动</p>
+		</div>
+		<div class="struggle_box">
+			<div class="struggle_page4_imgBox transiiton_way">
+				<img src="assets/images/industrial/xiro_Industriail_s4_img.png" width="100%" alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid footer_box" id="pageFooter">
+	<div class="container struggle_footer">
+		<div class="contact_xiro">
+			<a href="aboutus.html">关于我们</a>
+			<span>|</span>
+			<a href="contact.html">联系我们</a>
+			<span>|</span>
+			<a href="javascript:void(0)">加入我们</a>
+		</div>
+		<div class="contact_way">
+			<p>
+				社交网络：
+				<a class="wechart_box" href="javascript:void(0)">
+					<span class="wechart_img_box">
+						<img src="assets/images/wechatcode.jpg" width="100%" />
+					</span>
+					<i class="icon iconfont">&#xe63b;</i>
+					微信
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe881;</i>
+					微博
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe634;</i>
+					TWITTER
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe620;</i>
+					FACEBOOK
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe82c;</i>
+					YOUTUBE
+				</a>
+			</p>
+		</div>
+		<div class="clear"></div>
+		<p class="copyright">
+			Copyright © 2015 深圳零度智能飞行器有限公司 版权所有粤ICP备15019879号-2
+			<!-- <span class="gongshang">
+				<style> .gongshang img{width:15px !important;height:24px !important;}</style>
+				//
+				<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=197fa3f7-c886-48e2-9949-148f73221f11&amp;width=36&amp;height=50&amp;type=1" charset="utf-8" type="text/javascript"></script>
+			</span> -->
+		</p>
+	</div>
+</div>
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script type="text/javascript">
+	var $section = $('.section');
+    //hide timeline blocks which are outside the viewport
+	$section.each(function(){
+		if( $(this).offset().top <= ($(window).scrollTop()+$(window).height()*0.5)&&(!$(this).hasClass("active"))) {
+		     $(this).addClass('active').siblings(".section").removeClass("active");
+		}
+	});
+    //on scolling, show/animate timeline blocks when enter the viewport
+    $(window).on('scroll', function(){
+        $section.each(function(){
+            if( $(this).offset().top <= ($(window).scrollTop()+$(window).height()*0.5)&&(!$(this).hasClass("active"))) {
+                 $(this).addClass('active').siblings(".section").removeClass("active");
+            }
+        });
+    });
+</script>
+</body>
+</html>

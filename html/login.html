@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>零度无人机</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name=apple-mobile-web-app-title content="零度无人机">
+	<meta name="Resource-type" content="Document" />
+	<link rel=apple-touch-icon-precomposed href="img/apple-touch-icon-57x57-precomposed.png" />
+	<link rel=apple-touch-startup-image sizes=768x1004 href="img/loading-768x1004.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="format-detection" content="telephone=yes"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/regis.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css" media="screen" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript"  src="assets/js/lang_cn.js"></script>
+	<script type="text/javascript"  src="assets/js/formChech.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top struggle_top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/logo.png" width="70">
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="struggle_menu">
+						XPLORER
+						<div class="struggle_top_menuSlide" menuIndex="1">
+							<ul class="menuSlide_box">
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploer.png" width="100%" />
+										</div>
+										<span>XPLORER</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerV.png" width="100%" />
+										</div>
+										<span>XPLORER V</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerG.png" width="100%" />
+										</div>
+										<span>XPLORER G</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-VG</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-X</div>
+				</li>
+				<li>
+					<a href="support.html">支持</a>
+				</li>
+				<li>
+					<a href="activity.html">活动</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">论坛</a>
+				</li>
+				<li>
+					<a href="buy.html">购买</a>
+				</li>
+				<!--<li>
+					<a class="search_box" href="javascript:void(0)">
+						<input type="text" name="search" id="search" onfocus="" placeholder="XIRO" /> <i class="search_icon icon iconfont">&#xe640;</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"> <i class="icon iconfont">&#xf007c;</i>
+					</a>
+				</li>-->
+				<li class="active country_slide">
+					<a href="javascript:void(0)">
+						<div class="country_select">
+							<img src="assets/images/1_zh_cn.png" width="100%" alt="">
+						</div>
+						<div class="country_box">
+							<ul>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/1_zh_cn.png" width="100%"></div>
+									<span>简体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/2_zh_tw.png" width="100%"></div>
+									<span>繁体</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/3_english.png" width="100%"></div>
+									<span>English</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/4_german.png" width="100%"></div>
+									<span>German</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/5_french.png" width="100%"></div>
+									<span>French</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/6_italian.png" width="100%"></div>
+									<span>Italian</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/7_spanish.png" width="100%"></div>
+									<span>Spanish</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/8_korean.png" width="100%"></div>
+									<span>Korean</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/9_japanese.png" width="100%"></div>
+									<span>Japanese</span>
+								</li>
+							</ul>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid register-box table-box reg-bg">
+	<div class="container dis-table">
+		<div class="reg-box dis-tablecell">
+			<div class="dis-inline-block reg-content">
+				<div class="res-login">
+					<img src="assets/images/login/res_icon_05.png" />
+				</div>
+				<!--登录-->
+				<div class="regis-form-box login" >
+					<div class="third-login clearfix">
+						<div class="pull-left">
+							<a href="javascript:;" class="login-qq">
+								<i></i>
+								<b></b>
+							</a>
+						</div>
+						<div class="pull-left">
+							<a href="javascript:;" class="login-weixin">
+								<i></i>
+								<b></b>
+							</a>
+						</div>
+						<div class="pull-left">
+							<a href="javascript:;" class="login-weibo">
+								<i></i>
+								<b></b>
+							</a>
+						</div>
+					</div>
+					<form id="login">
+						<div class="warning-box">
+							<p></p>
+						</div>
+						<label>
+							<input type="email" id="login_email" name="login_email" placeholder="邮箱" class="email"/>
+							<i class="email-icon"></i>
+						</label>
+						<label>
+							<input type="password" id="password" name="password" placeholder="密码" />
+							<i class="password-icon"></i>
+						</label>
+						<label>
+							<input type="text" id="verify_code" name="verify_code"  placeholder="验证码" />
+							<i class="verify-code"></i>
+							<div class="code-box">
+								<img src="assets/images/login/codeDEMO_03.jpg" />
+							</div>
+						</label>
+						<button class="regis-btn" id="login_btn" type="submit">登录</button>
+					</form>
+					<div class="clearfix other-btn">
+						<a href="javascript:;" class="pull-left" id="to-register">注册</a>
+						<a href="#getnew" class="pull-right" id="to-getnew">忘记密码</a>
+					</div>
+				</div>
+				<!--注册-->
+				<div class="regis-form-box register" style="display: none;">
+					<form id="register">
+						<div class="warning-box">
+							<p></p>
+						</div>
+						<label>
+							<input type="email" id="reg_email" name="reg_email"  placeholder="邮箱" />
+							<i class="email-icon"></i>
+						</label>
+						<label>
+							<input type="password" id="reg_password" name="reg_password" placeholder="密码" />
+							<i class="password-icon"></i>
+						</label>
+						<label>
+							<input type="password" id="confirm_password" name="confirm_password" placeholder="再次输入密码" />
+							<i class="password-icon"></i>
+						</label>
+						<label>
+							<input type="text" id="reg_code" name="reg_code"  placeholder="验证码" />
+							<i class="verify-code"></i>
+							<div class="code-box">
+								<img src="assets/images/login/codeDEMO_03.jpg" />
+							</div>
+						</label>
+						<button class="regis-btn" type="submit">注册</button>
+					</form>
+					<div class="clearfix other-btn">
+						<a href="javascript:;" class="pull-left" id="back-login1">已有账号</a>
+						<span class="pull-right agree_link" >点击注册，表示您同意<a href="agreement.html">《零度服务使用条款》</a></span>
+					</div>
+				</div>
+				<!--找回密码-->
+				<div class="regis-form-box getnew" id="getnew" style="display: none;">
+					<form id="get_new">
+						<div class="warning-box">
+							<p></p>
+						</div>
+						<label>
+							<input type="email" id="email_get" name="email_get" placeholder="邮箱" />
+							<i class="email-icon"></i>
+						</label>
+						<label>
+							<input type="text" id="get_code" name="get_code" placeholder="验证码" />
+							<i class="verify-code"></i>
+							<div class="code-box">
+								<img src="assets/images/login/codeDEMO_03.jpg" />
+							</div>
+						</label>
+						<button class="regis-btn" id="get-email" type="submit">下一步</button>
+					</form>
+					<div class="clearfix other-btn">
+						<a href="javascript:;" class="pull-left" id="back-login2">又想起来了</a>
+					</div>
+				</div>
+				<!--确认邮件-->
+				<div class="regis-form-box share-box" style="display: none;">
+					<div class="share-email">
+						<p>我们已经向您的邮箱<i>123456789@163.com</i>发送了
+一封密码找回邮件，请您注意查收</p>
+						<div>
+							<a href="javascript:;" class="go-to-email">查看</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid footer_box hidden-xs" id="im-footer">
+	<div class="container struggle_footer">
+		<div class="contact_xiro">
+			<a href="aboutus.html">关于我们</a>
+			<span>|</span>
+			<a href="contact.html">联系我们</a>
+			<span>|</span>
+			<a href="javascript:void(0)">加入我们</a>
+		</div>
+		<div class="contact_way">
+			<p>
+				社交网络：
+				<a class="wechart_box" href="javascript:void(0)">
+					<span class="wechart_img_box">
+						<img src="assets/images/wechatcode.jpg" width="100%" />
+					</span>
+					<i class="icon iconfont">&#xe63b;</i>
+					微信
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe881;</i>
+					微博
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe634;</i>
+					TWITTER
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe620;</i>
+					FACEBOOK
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe82c;</i>
+					YOUTUBE
+				</a>
+			</p>
+		</div>
+		<div class="clear"></div>
+		<p class="copyright">
+			Copyright © 2015 深圳零度智能飞行器有限公司 版权所有粤ICP备15019879号-2
+			<span class="gongshang">
+				<style> .gongshang img{width:15px !important;height:24px !important;}</style>
+				<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=197fa3f7-c886-48e2-9949-148f73221f11&amp;width=36&amp;height=50&amp;type=1" charset="utf-8" type="text/javascript"></script>
+			</span>
+		</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assets/js/jcfilter.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=R3ryLDazFlGr5UBAxhdHfn82"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script type="text/javascript" src="assets/js/im-js.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+</body>
+</html>

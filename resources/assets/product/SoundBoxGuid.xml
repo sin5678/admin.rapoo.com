@@ -1,0 +1,11 @@
+<Guid>
+  <type>模拟信号</type>
+  <source>有源无源</source>
+  <rating>额定功率</rating>
+  <function>防磁功能 </function>
+  <frequency>频响范围（KHz）</frequency>
+  <snr>信噪比</snr>
+  <distortion>失真度</distortion>
+  <speaker>扬声器单元（mm）</speaker>
+  <weight>产品重量</weight>
+</Guid>

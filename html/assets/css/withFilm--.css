@@ -1,0 +1,36 @@
+.spaceh40{width: 10px;height: 40px;}
+.struggle_film_container{width: 100%;overflow: hidden;}
+.struggle_film_container .section1{background: #000 url(../images/film/withFilm_01.jpg) no-repeat 50% 50%;height: 1000px;}
+.struggle_film_container .section2{background: #000 url(../images/film/withFilm_02.jpg) no-repeat 50% 50%;height: 1000px;}
+.struggle_film_container .section3{background: #000 url(../images/film/withFilm_03.jpg) no-repeat 50% 50%;height: 1003px;}
+.struggle_film_container .section4{background: #000 url(../images/film/withFilm_04.jpg) no-repeat 50% 50%;height: 1224px;}
+.struggle_film_container .section5{background: #000 ;height: 900px;}
+.struggle_box{width:1140px;overflow: hidden;margin: 0 auto;position: relative;height: 100%}
+.section1 .text{width: 100%;text-align: center;position: absolute;top:730px;}
+.section1 .text h4{color: #fff;font-size: 24px;}
+.section1 .text h2{color: #3cd52e;}
+.section1 .text a{padding: 5px 20px;background: #dadf00;color: #000;margin-top: 20px;}
+.section2 .text{width: 400px;text-align: left;position: absolute;top:350px;}
+.section2 .text h2{color: #000;}
+.section2 .text p{color: #000;line-height: 30px;}
+.section2 .text .list li{float: left;color: #f7f7f7}
+.section2 .text .list li.padlr20{padding: 0 20px;}
+.section2 .text .film_phont{width: 660px;margin-top: 60px;margin-left: -10px;}
+.section3 .text{width: 450px;text-align: right;position: absolute;bottom: 100px;right: 50px;}
+.section3 .text h2{color: #000;}
+.section3 .text p{color: #000;line-height: 30px;}
+.section3 .text .list li{float: left;color: #f7f7f7}
+.section3 .text .list li.padlr20{padding: 0 20px;}
+.section3 .text .film_phont{width: 660px;margin-top: 60px;margin-left: -10px;}
+
+
+
+
+
+
+
+
+
+
+
+

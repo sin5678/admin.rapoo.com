@@ -1,0 +1,75 @@
+/********** Nav **********/
+@media screen  and (min-width:715px) and (max-width:1000px) {
+	.struggle_top .container {width: 100%;padding:0 12px}
+}
+@media screen and (max-width: 855px) {
+	.menuSlide_box{margin-left: 28%;}
+}
+@media screen and (max-width: 768px) {
+	.navbar-default .navbar-toggle {border-color: transparent;}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {background: transparent;}
+	.navbar-default .navbar-toggle .icon-bar {height: 3px;background-color: #fff;}
+	
+	.navbar-default .navbar-collapse{padding: 0;border-color: transparent;}
+	.struggle_top .navbar-right {margin-right: 0px;}
+	.struggle_top .top_space30{display: none;}
+	.navbar-nav{margin: 0;}
+	.struggle_top .navbar-right .country_slide{display: none;}
+	
+	.struggle_top_menuSlide{width: 100%;height: auto;overflow: hidden;position: inherit;background: transparent;}
+	.menuSlide_box{width: 100%;height: auto;margin-left: 0;}
+	.menuSlide_box li{width: 33.5%;text-align: left;}
+	.menuSlide_box li:first-child{width: 30%;}
+	.menuSlide_box .line{width: auto;display: block;}
+	.menuSlide_box a{text-decoration: none;}
+	.menuSlide_box li a .menu_icon_box{display: none;}
+}
+
+/********** Banner **********/
+@media only screen and (min-width: 1024px){
+	.banner{height: 280px;}
+	.banner>div{margin-top:70px;}
+	.banner h4{font-size: 32px;}
+	.banner p{font-size: 24px;}
+	.aboutus-banner h4,.contact_banner h4{font-size: 42px;}
+	.contact_banner p{font-size: 28px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.banner{height:250px;}
+	.banner>div{margin-top:55px;}
+	.banner h4{font-size: 28px;}
+	.banner p{font-size: 20px;}
+	.aboutus-banner h4,.contact_banner h4{font-size: 35px;}
+	.contact_banner p{font-size: 25px;}
+}
+@media only screen  and (max-width: 767px) {
+	.banner{height: 220px;}
+	.banner>div{margin-top:50px;}
+	.banner h4{font-size: 24px;}
+	.banner p{font-size: 16px;}
+	.aboutus-banner h4,.contact_banner h4{font-size: 28px;}
+	.contact_banner p{font-size: 20px;}
+}
+
+/********** Footer **********/
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.struggle_footer .contact_way{display: none;}
+	.struggle_footer .copyright{margin-top: 10px;}
+}
+@media only screen and (max-width: 768px) {
+	.footer_box{padding: 12px 0;}
+	.struggle_footer .contact_xiro{float: none;text-align: center;}
+	.struggle_footer .contact_xiro a{padding: 0 8px;}
+	.struggle_footer .contact_way{display: none;}
+	.struggle_footer .copyright{display: none;}
+	.language .dropdown-menu{min-width: 120px;}
+}
+@media only screen and (max-width: 400px) {
+	.struggle_footer .contact_xiro{margin: 0 -15px;}
+	.struggle_footer .contact_xiro a{padding:0;}
+	.language .btn{padding: 0;}
+	.language .dropdown-menu{min-width: 80px;}
+	.language .dropdown-menu>li>a{padding: 3px 5px;}
+}
+

@@ -1,0 +1,11 @@
+<Guid>
+  <drive>驱动单元</drive>
+  <frequency>频率响应</frequency>
+  <impedance>阻抗</impedance>
+  <delicacy>灵敏</delicacy>
+  <micmode>麦克风拾音模式</micmode>
+  <snr>信噪比</snr>
+  <distortion>失真度</distortion>
+  <type>类型</type>
+  <testif>测试条件</testif>
+</Guid>

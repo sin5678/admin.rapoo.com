@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>零度无人机</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name=apple-mobile-web-app-title content="零度无人机">
+	<meta name="Resource-type" content="Document" />
+	<link rel=apple-touch-icon-precomposed href="img/apple-touch-icon-57x57-precomposed.png" />
+	<link rel=apple-touch-startup-image sizes=768x1004 href="img/loading-768x1004.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="format-detection" content="telephone=yes"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/support.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css" media="screen" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+		 
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top struggle_top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/logo.png" width="70">
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="struggle_menu">
+						XPLORER
+						<div class="struggle_top_menuSlide" menuIndex="1">
+							<ul class="menuSlide_box">
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploer.png" width="100%" />
+										</div>
+										<span>XPLORER</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerV.png" width="100%" />
+										</div>
+										<span>XPLORER V</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerG.png" width="100%" />
+										</div>
+										<span>XPLORER G</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-VG</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-X</div>
+				</li>
+				<li>
+					<a href="support.html">支持</a>
+				</li>
+				<li>
+					<a href="activity.html">活动</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">论坛</a>
+				</li>
+				<li>
+					<a href="buy.html">购买</a>
+				</li>
+				<!--<li>
+					<a class="search_box" href="javascript:void(0)">
+						<input type="text" name="search" id="search" onfocus="" placeholder="XIRO" /> <i class="search_icon icon iconfont">&#xe640;</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"> <i class="icon iconfont">&#xf007c;</i>
+					</a>
+				</li>-->
+				<li class="active country_slide">
+					<a href="javascript:void(0)">
+						<div class="country_select">
+							<img src="assets/images/1_zh_cn.png" width="100%" alt="">
+						</div>
+						<div class="country_box">
+							<ul>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/1_zh_cn.png" width="100%"></div>
+									<span>简体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/2_zh_tw.png" width="100%"></div>
+									<span>繁体</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/3_english.png" width="100%"></div>
+									<span>English</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/4_german.png" width="100%"></div>
+									<span>German</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/5_french.png" width="100%"></div>
+									<span>French</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/6_italian.png" width="100%"></div>
+									<span>Italian</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/7_spanish.png" width="100%"></div>
+									<span>Spanish</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/8_korean.png" width="100%"></div>
+									<span>Korean</span>
+								</li>
+								<li>
+									<div class="country_imgBox padbtm5">
+										<img src="assets/images/9_japanese.png" width="100%"></div>
+									<span>Japanese</span>
+								</li>
+							</ul>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="fullpage_container">
+	<div class="container-fluid">
+		<div class="banner support-banner">
+			<div>
+				<h4>零度无人机</h4>
+				<p>极速响应，48小时只为您贴心服务</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid over-hidden content-box im-bg-ef">
+		<!--背景色-->
+		<div class="im-bg">
+			<div class="bg-right"></div>
+			<div class="bg-left"></div>
+		</div>
+		<div class="container2 clearfix">
+			<!--支持中心左侧导航-->
+			<div class="right-box">
+				<ul>
+					<li class="active">
+						<a href="javascript:;" >
+							<i class=" download-icon"></i>
+							<h3>下载中心</h3>
+							<p class="hidden-xs">获取xiro产品相关下载 </p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class=" question-icon"></i>
+							<h3>常见问题</h3>
+							<p class="hidden-xs">xiro相关知识及问题解答 </p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class=" underline-icon"></i>
+							<h3>线上服务</h3>
+							<p class="hidden-xs">xiro售后服务、维修查询 </p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<i class=" online-icon"></i>
+							<h3>线下服务</h3>
+							<p class="hidden-xs">xiro线下网点信息 </p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--支持中心右侧内容-->
+			<div class="left-box">
+				<!--下载页面-->
+				<div class="download">
+					<!--选择条件-->
+					<div>
+						<h3>选择条件</h3>
+						<div class="choice-box">
+							<div class="type-box">
+								<span>机型：</span>
+								<ul>
+									<li modal="p"><a href="javascript:;">XPLORER</a></li>
+									<li modal="v" class="active"><a href="javascript:;">XPLORER&nbsp;&nbsp;V</a></li>
+									<li modal="g"><a href="javascript:;">XPLORER&nbsp;&nbsp;G</a></li>
+								</ul>
+							</div>
+							<div class="normal-choice">
+								<span>APP：</span>
+								<ul name="terrace">
+									<li terrace="an"><a href="javascript:;" >Android</a></li>
+									<li class="active" terrace="iP"><a href="javascript:;">iOS</a></li>
+								</ul>
+							</div>
+							<div class="normal-choice">
+								<span>固件：</span>
+								<ul name="firmware">
+									<li><a href="javascript:;">飞控固件</a></li>
+									<li><a href="javascript:;">云台固件</a></li>
+									<li><a href="javascript:;">软件驱动</a></li>
+								</ul>
+							</div>
+							<div class="normal-choice">
+								<span>文档：</span>
+								<ul name="document">
+									<li><a href="javascript:;">简体说明书</a></li>
+									<li><a href="javascript:;">繁体说明书</a></li>
+									<li><a href="javascript:;">英文说明书</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--查询结果-->
+					<div>
+						<h3>查询结果</h3>
+						<div class="download-result">
+							<div class="app-download download-box" name="terrace">
+								<ul>
+									<li modal="g" terrace="iP">
+										<div class="Software-infro">
+											<img src="assets/images/support/software.jpg" />
+											<div>
+												<h3>XIRO</h3>
+												<p class="hidden-xs">深圳零度 XPLORER 无人机专用 APP</p>
+												<div class="version-infro">
+													<span class="hidden-xs">v1.1.0</span><span>31.72MB</span><span class="hidden-xs">iOS6及以上</span><span  class="hidden-xs">2015-07-09</span>
+												</div>
+												<a href="javascript:;" class="download-pingguo "><i class="iconfont2">&#x3437;</i>iPhone</a>
+											</div>
+										</div>
+										<div class="Software-detail">
+											<h4>内容简介</h4>
+											<p>相机：支持飞机相机图像实时预览，拍照，录像，各种相机参数实时设置</p>
+											<p>自拍：支持跟随、环绕自拍模式</p>
+											<p>相册：支持实时访问相机TF卡中的视频和图片，并可以随时保存到本地</p>
+											<p>地图：飞机状态，参数实时显示，配合飞机控制手柄实现完美飞行体验， 支持航点设置和指点飞行。</p>
+											<p>设置：中继、相机、飞控云台设置</p>
+											<p>开发商：ShenZhen Rapoo Technology Co.,Limited</p>
+										</div>
+									</li>
+									<li modal="p" terrace="an">
+										<div class="Software-infro">
+											<img src="assets/images/support/software.jpg" />
+											<div>
+												<h3>XIRO</h3>
+												<p  class="hidden-xs">深圳零度 XPLORER 无人机专用 APP</p>
+												<div class="version-infro">
+													<span  class="hidden-xs">v1.1.0</span><span>31.72MB</span><span  class="hidden-xs">iOS6及以上</span><span  class="hidden-xs">2015-07-09</span>
+												</div>
+												<a href="javascript:;" class="download-anzhuo"><i class="iconfont2">&#xe61c;</i>Android</a>
+											</div>
+										</div>
+										<div class="Software-detail">
+											<h4>内容简介</h4>
+											<p>相机：支持飞机相机图像实时预览，拍照，录像，各种相机参数实时设置</p>
+											<p>自拍：支持跟随、环绕自拍模式</p>
+											<p>相册：支持实时访问相机TF卡中的视频和图片，并可以随时保存到本地</p>
+											<p>地图：飞机状态，参数实时显示，配合飞机控制手柄实现完美飞行体验， 支持航点设置和指点飞行。</p>
+											<p>设置：中继、相机、飞控云台设置</p>
+											<p>开发商：ShenZhen Rapoo Technology Co.,Limited</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="firmware-download download-box" style="display: none;" name="firmware">
+								<ul>
+									<li>
+										<div class="firmware-infro clearfix">
+											<div class="firmware-name">XPLORER主控的固件指引</div>
+											<div class="clearfix over-hidden">
+												<div class="firmware-size">1.2m</div>
+												<div class="firmware-btn">
+													<a href="javascript:;" class="download-btn"></a>
+												</div>
+												<div class="firmware-date hidden-xs">2015-02-08</div>
+											</div>
+										</div>
+										<div class="firmware-detail">
+											<ol>
+												<li>1、增强了在强磁场干扰下飞行器稳定性</li>
+												<li>2、提升了大动作飞行下操作手感和体验</li>
+											</ol>
+										</div>
+									</li>
+									<li>
+										<div class="firmware-infro clearfix">
+											<div class="firmware-name">XPLORER主控的固件指引</div>
+											<div class="clearfix over-hidden">
+												<div class="firmware-size">1.2m</div>
+												<div class="firmware-btn">
+													<a href="javascript:;" class="download-btn"></a>
+												</div>
+												<div class="firmware-date hidden-xs">2015-02-08</div>
+											</div>
+										</div>
+										<div class="firmware-detail">
+											<ol>
+												<li>1、增强了在强磁场干扰下飞行器稳定性</li>
+												<li>2、提升了大动作飞行下操作手感和体验</li>
+											</ol>
+										</div>
+									</li>
+		
+								</ul>
+							</div>
+							<div class="document-download download-box" style="display: none;" name="document">
+								<ul>
+									<li>
+										<div class="firmware-infro clearfix">
+											<div class="firmware-name">XPLORER主控的固件指引</div>
+											<div class="clearfix over-hidden">
+												<div class="firmware-size">1.2m</div>
+												<div class="firmware-btn">
+													<a href="javascript:;" class="download-btn"></a>
+												</div>
+												<div class="firmware-date hidden-xs">2015-02-08</div>
+											</div>
+										</div>
+										<div class="firmware-detail">
+											<ol>
+												<li>1、增强了在强磁场干扰下飞行器稳定性</li>
+												<li>2、提升了大动作飞行下操作手感和体验</li>
+											</ol>
+										</div>
+									</li>
+									<li>
+										<div class="firmware-infro clearfix">
+											<div class="firmware-name">XPLORER主控的固件指引</div>
+											<div class="clearfix over-hidden">
+												<div class="firmware-size">1.2m</div>
+												<div class="firmware-btn">
+													<a href="javascript:;" class="download-btn"></a>
+												</div>
+												<div class="firmware-date hidden-xs">2015-02-08</div>
+											</div>
+										</div>
+										<div class="firmware-detail">
+											<ol>
+												<li>1、增强了在强磁场干扰下飞行器稳定性</li>
+												<li>2、提升了大动作飞行下操作手感和体验</li>
+											</ol>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="nullWainning">无查询内容</div>
+						</div>
+					</div>
+
+				</div>
+				<!--常见问题-->
+				<div class="question" style="display: none;">
+					<div class="support-search">
+						<form>
+							<input type="text" placeholder="搜索关键词如：无人机" id="filterFAQ"  />
+							<a href="javascript:;">搜索</a>
+						</form>
+					</div>
+					<div class="question-box">
+						<div class="question-list">
+							<h3 class="question-types">关于购买零度智能无人机</h3>
+							<ul class="question-lists">
+								<li class="question-item">
+									<div class="question-title questionF">1、深圳零度与北京零度是什么关系？</div>
+									<div class="question-answer questionF">我们是深圳零度智能飞行器有限公司，是由雷柏科技和北京零度智控合资并由雷柏科技控股的无人机公司。主要负责消费类小型无人机的研发生产和销售。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">2、如何购买零度XPLORER无人机产品？</div>
+									<div class="question-answer questionF">1. 搜索深圳零度智能无人机官网首页进行购买； 
+									<br />2. 搜索淘宝店铺零度无人机或直接进入：http://shop116944497.taobao.com/ 进行购买； 
+									<br />3. 关注深圳零度智能飞行器官方微信公众号，点击零度产品/零度商城进行购买； 
+									<br />4. 拨打深圳零度智能无人机官方电话:4008073888咨询购买渠道。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF"> XPLORER G版云台可支持GoPro哪些相机？</div>
+									<div class="question-answer questionF">目前XPLORER G版云台可支持GoPro Hero4-BLACK与GoPro Hero4-SLIVER、GoPro Hero3系列相机，用户可根据自身喜好选取搭载相机。</div>
+								</li>
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="question-list">
+							<h3 class="question-types ">飞行器相关基本功能</h3>
+							<ul>
+								<li class="question-item">
+									<div class="question-title questionF">为什么螺旋桨无法安装到飞行器电机上？</div>
+									<div class="question-answer questionF">
+									1、螺旋桨与电机不匹配，请检查螺旋桨上中间圈的颜色与电机是 否匹配（银色中圈螺旋桨匹配银色电机，黑色中圈的螺旋桨匹配黑色电机）； 
+										<br />2、螺旋桨安装时注意上下面的放置； 
+										<br />3、安装螺旋桨时螺旋桨的中圈缺口位置同电机中间的凸出位置对应好； 
+										<br />4、安装螺旋桨时旋转方向，螺旋桨上标识有上锁与解锁方向，安装时请按照上锁方向旋转，然后用扳手将对应电机颜色的桨帽旋紧锁好； 
+										<br />5、零度无人机可支持同等规格（9445桨型）的自紧桨； 
+										<br />6、确认上述步骤无误好，如果仍然无法安装，请联系零度进行处理。
+									</div>
+								</li>
+								
+								<li class="question-item">
+									<div class="question-title questionF">机身上的Micro USB接口的作用是什么？</div>
+									<div class="question-answer questionF">用户可通过机身上的Micro USB接口查看飞控固件版本；对飞控固件进行升级；飞行器参数配置功能。</div>
+								</li>
+								<li class="question-item">
+									<div class="question-title questionF">飞行器的功能操作如何实现？</div>
+									<div class="question-answer questionF">
+										<table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+											<tbody>
+											<tr>
+											<td colspan="2" class="td_head">飞行器功能示例</td>
+											</tr>
+											<tr>
+											<td class="td_left">启动电机</td>
+											<td class="td_right">外部启动电机,然后将油门舵位推高（左边摇杆往上打）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">落地停机</td>
+											<td class="td_right">飞机平稳落地后，将油门舵位拉到底，持续至电机自动停转；</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机平稳落地后，操作外八动作电机停转（空中不可执行此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">空中悬停</td>
+											<td class="td_right">在GPS模式下，飞机起飞后，保持遥控器所有遥杆在中位，飞机自动在空中当前位置悬停</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动起飞</td>
+											<td class="td_right">在进入GPS模式后，启动电机后将遥控器最右边按键按下，飞机自动升高到3米左右位置悬停（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">一键自动降落</td>
+											<td class="td_right">在GPS模式下，将遥控器最右边按键按下，飞机自动从当前位置高度缓慢下降，直到落地停转电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td rowspan="2" class="td_left">一键自动返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离大于25米时，同时高度小于20米，飞机爬升至20米高度然后水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器中间H键按下，当航线距离小于25米时，飞机水平返航至返航点最上方，再匀速下降至地面，停止电机（此动作完成后，把该按键按起来）</td>
+											</tr>
+											<tr>
+											<td class="td_left">无头模式飞行</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，将遥控器最左边按键按下，将以飞机当时按下的位置，和飞机返航位置确定一条直线，并且以这条直线为轨迹，不论机头朝向那边，飞机都会朝此方向作为前进方向，其它方向依次类推（再按起该按键为退出无头飞行模式）</td>
+											</tr>
+											<tr>
+											<td class="td_left">掰杆动作</td>
+											<td class="td_right">飞机飞行时将左右摇杆向外八掰杆动作为停止电机（此情况为遇到紧急情况的应急措施，通常正常飞行不可此操作）</td>
+											</tr>
+											<tr>
+											<td class="td_left">失联返航</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当遥控器与飞行失去通讯，无法控制飞机时，飞机会自动返航。（可以重启遥控器重新获得控制权）</td>
+											</tr>
+											<tr>
+											<td class="td_left">低电保护</td>
+											<td class="td_right">飞机在GPS模式下飞行过程中，当飞机电池余量不足以续航时，飞机将在距离超过100米的位置自动返航至返航点，距离小于100米时飞机垂直缓慢降落（飞机在水平返航状态时遥控器不可对其进行操作，垂直降落时，遥控器可对其调整位置，不建议飞机低电时飞行）</td>
+											</tr>
+											</tbody>
+											</table>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<!--线上服务-->
+				<div class="online-services" style="display: none;">
+					<div class="services-type clearfix">
+						<div class="services-qq services-t-list">
+							<div class="services">
+								<a href="javascript:;"><i class="qq-icon"></i>4008073888</a>
+							</div>
+							<div class="services-worktime">
+								<h4>QQ客服：在线为您解答</h4>
+								<p>工作时间：周一至周五</p>
+								<p>服务范围：售前、售后、投诉处理</p>
+							</div>
+						</div>
+						<div class="services-tell services-t-list">
+							<div class="services">
+								<span>4008 073 888</span>
+							</div>
+							<div class="services-worktime">
+								<h4>电话客服：仅收市话费</h4>
+								<p>工作时间：周一至周五</p>
+								<p>服务范围：售前、售后、投诉处理</p>
+							</div>
+						</div>
+						<div class="services-email services-t-list">
+							<div class="services">
+								<span class="hk-email">
+									<p>香港：as-hk@xirodrone.com</p>
+									<p>总部：as@xirodrone.com</p>
+								</span>
+							</div>
+							<div class="services-worktime">
+								<h4>售后邮箱：为您提供咨询服务</h4>
+								<p>工作时间：周一至周五</p>
+								<p>服务范围：售前、售后、投诉处理</p>
+							</div>
+						</div>
+					</div>
+					<div class="services-type services-type2 clearfix">
+						<div class="services-facebook services-t-list">
+							<div class="services">
+								<span>facebook</span>
+							</div>
+							<div class="services-worktime">
+								<h4>Facebook ：Consulting Service</h4>
+								<p>Working Time: from Monday to Friday</p>
+								<p>Services: Pre-Sales, After-Sales & Complaints Handling</p>
+							</div>
+						</div>
+						<div class="services-tell services-t-list">
+							<div class="services">
+								<span>760-683-9476</span>
+							</div>
+							<div class="services-worktime">
+								<h4>Telephone：Consulting Service</h4>
+								<p>Working Time: from Monday to Friday</p>
+								<p>Services: Pre-Sales, After-Sales & Complaints Handling</p>
+							</div>
+						</div>
+						<div class="services-email services-t-list">
+							<div class="services">
+								<span class="usa-email">as-usa@xirodrone.com</span>
+							</div>
+							<div class="services-worktime">
+								<h4>Email：Consulting Service</h4>
+								<p>Working Time: from Monday to Friday</p>
+								<p>Services: Pre-Sales, After-Sales & Complaints Handling</p>
+							</div>
+						</div>
+					</div>
+					<div class="services-form">
+						<h3>在线反馈</h3>
+						<div>
+							<p>如果您有任何问题，请填写下列表单提交，我们将尽快给您答复。</p>
+							<form action="" method="post">
+								<label>
+									<span>名称</span>
+									<input type="text"/>
+								</label>
+								<label>
+									<span>联系电话</span>
+									<input type="text"/>
+								</label>
+								<label>
+									<span>QQ</span>
+									<input type="text"/>
+								</label>
+								<label>
+									<span>反馈信息</span>
+									<input type="text"/>
+								</label>
+								<label class="clearfix">
+									<a href="javascript:;" class="form-sumbit pull-right">提交</a>
+								</label>
+							</form>
+						</div>
+					</div>
+					<div class="services-policy">
+						<h2>零度售后服务政策</h2>
+						<div>
+							<p>为了让您的飞行无顾虑，零度有着强大的售后保障承诺，只要您在零度授权代理商、零度官方销售网点、以及零度官方网络销售渠道购买的产品，即可从购买日起享受零度对应的退货、产品保修、维修服务，零度同时承诺用户亲自到店（维修网点）申请维修，我们将在<strong>1小时内为您完成维修</strong>，若情况需要退回厂家维修时，<strong>我们承诺维修在48小时内完成</strong>（零度收到货物时间至零度维修完毕发货时间小于48小时），请您保留好产品购买凭证、收据或订单号码，以便您在本规定范围内行使相关权利。我司有权对此政策进行修改且不做另行通知，请在零度官方网址查阅最新政策规定：</p>
+							<div class="policy-title"><h3>零度售后服务流程</h3></div>
+							<div>
+								<img src="assets/images/support/servises_06.jpg"  class="hidden-xs"/>
+								<img src="assets/images/support/ser_list.jpg"  class="visible-xs-block policy-minimg"/>
+							</div>
+							<div class="policy-title"><h3>售后服务寄件信息</h3></div>
+							<div>
+								<p>收货地址：广东省深圳市坪山新区坑梓街道锦绣东路22号雷柏科技园</p>
+								<p>收货人：零度售后组 </p>
+								<p>售后维修：13410967806   退货换新：13530364601</p>
+							</div>
+							<div class="policy-title"><h3>深圳零度售后服务基本内容</h3></div>
+							<div>
+								<p>深圳零度严格遵守国家《消费者权益保护法》，并承诺由产品售出之日（以实际收货日期为准）起7个自然日内，顾客可根据实际情况提出退货要求；由产品售出之日（以实际收货日期为准）起15个自然日内，顾客可根据实际情况提出换货要求；</p>
+								<p>在符合深圳零度的售后条款下，深圳零度产品可享受1年内的免费零件保修服务，并可根据实际需要购买ReXIRO深度服务，享受范围更广的更新服务。</p>
+								<p>所有购买深圳零度产品的用户均获得48小时维修时效承诺：即当产品进行售后服务时，从深圳零度官方收到产品，至深圳零度官方发出产品，其时长不超过48小时。</p>
+							</div>
+							<div class="policy-title"><h3>深圳零度退换货政策</h3></div>
+							<div>
+								<div>在以下规定范围内，深圳零度承诺给您：7天包退，15天包换。</div>
+								<div>符合以下条件之一的，您可以要求退货：</div>
+								<ol>
+									<li>1.客户收到货物7天内，未使用的情况下发现商品有明显的制造缺陷；</li>
+									<li>2.货物经过一次换货，但仍存在非人为导致的质量问题；</li>
+								</ol>
+								<div>符合以下条件之一的，您可以要求换货：</div>
+								<ol>
+									<li>1.实际收到的货物与该货物的描述不相符；</li>
+									<li>2.产品拆包后根据说明书或在技术人员的指导下无法正常启动的，或发现非人为的产品质量缺陷；</li>
+								</ol>
+								<div>以下情况我们有权拒绝您的退换货要求：</div>
+								<ol>
+									<li>1.超过7天或15天产品退/换货期限后提出的退换货要求的（自收货日起计算）；</li>
+									<li>2.退换货品不全，外包装、附件、赠品、说明书不完整、或外观人为原因导致受损；</li>
+									<li>3.货物经深圳零度技术支持部门检测，本身不存在质量问题；</li>
+									<li>4.发生非本身质量问题导致的碰撞、烧毁，以及人为的私自改装、进异物（水、油、沙等）、 不正确安装、未按说明书指引使用和操作所造成的商品质量问题；</li>
+									<li>5.撕毁、涂改标签、机器序列号、防水标记、防伪标记等；</li>
+								</ol>
+							</div>
+							<div class="policy-title"><h3>保修项目内容</h3></div>
+							<div class="warranty clearfix">
+								<div class="pull-left">
+									<div>在保修期内因产品本身品质异常造成的损坏，深圳零度将负责免费维修，主要部件保修期规定如下：</div>
+									<table>
+										<tbody>
+											<tr>
+												<td>关键部件</td>
+												<td>保修期限</td>
+											</tr>
+											<tr>
+												<td>电池</td>
+												<td>3个月</td>
+											</tr>
+											<tr>
+												<td>电机</td>
+												<td>6个月</td>
+											</tr>
+											<tr>
+												<td>云台主体</td>
+												<td>6个月</td>
+											</tr>
+											<tr>
+												<td>飞控</td>
+												<td>12个月</td>
+											</tr>
+											<tr>
+												<td>中继器</td>
+												<td>12个月</td>
+											</tr>
+											<tr>
+												<td>相机</td>
+												<td>12个月</td>
+											</tr>
+											<tr>
+												<td>充电器</td>
+												<td>12个月</td>
+											</tr>
+											<tr>
+												<td>遥控器</td>
+												<td>12个月</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="pull-left">
+									<div>若产品已过保修期，或者属于人为原因造成的有偿维修费用如下：</div>
+									<table>
+										<tbody>
+											<tr>
+												<td>关键部件</td>
+												<td>维修费用（人民币）</td>
+											</tr>
+											<tr>
+												<td>机架总成</td>
+												<td>699</td>
+											</tr>
+											<tr>
+												<td>飞控盒</td>
+												<td>699</td>
+											</tr>
+											<tr>
+												<td>遥控器</td>
+												<td>399</td>
+											</tr>
+											<tr>
+												<td>中继器</td>
+												<td>199</td>
+											</tr>
+											<tr>
+												<td>充电座</td>
+												<td>99</td>
+											</tr>
+											<tr>
+												<td>电源适配器</td>
+												<td>139</td>
+											</tr>
+											<tr>
+												<td>V版&nbsp;云台</td>
+												<td>299</td>
+											</tr>
+											<tr>
+												<td>G版&nbsp;云台</td>
+												<td>299</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+							<div class="policy-title"><h3>以下情况不属于免费保修的范围</h3></div>
+							<div>
+								<ol>
+									<li>1.飞机及对应配套设备丢失的，无法找回，不予保修；</li>
+									<li>2.产品经分析是浸水造成，不予保修；</li>
+									<li>3.电池与桨叶属于消耗品，不予保修；</li>
+									<li>4.被分析后发现是人为故意损伤的，不予保修；</li>
+									<li>5.在任何情况下，不予保障您和他人人身或者其他财产直接或者间接的损失与损害</li>
+								</ol>
+								<p>本售后服务政策最终解释权归于深圳零度</p>
+							</div>
+							<div class="policy-title"><h3>零度退换货及保修服务快递政策</h3></div>
+							<div>
+								<div>
+									1、 所有退换货运单及维修运单，零度仅接受来自顺丰及圆通的运单，其余运单一律不予接受。
+								</div>
+								<div>2、 用户在进行售后服务前，需提前咨询零度客服人员，确认产品需寄回检测并告知相关的快递信息；如用户未提前告知，或未经零度客服人员确认寄回产品，零度一律不予接受。</div>
+								<div>3、 用户寄回产品需预先支付寄回的快递费用，此部分费用将根据以下情况确定是否退还：
+									<p>①用户在符合退换货条件或免费保修条件时，进行售后服务并寄出产品，此部分邮资由深圳零度支付。</p>
+									<p>②零度进行退换货或免费保修服务时，将相应的产品寄出，此部分邮资由深圳零度支付。</p>
+									<p>③用户如未购买ReXIRO深度服务，在执行非产品质量问题保修或付费维修服务时，产品寄出以及产品收回的邮资，皆由用户支付。</p>
+									<p>④用户若已购买ReXIRO深度服务，在执行非产品质量问题保修或付费维修服务时，产品寄出以及产品收回的邮资，皆由深圳零度支付。</p>
+								</div>
+								<p>本售后服务政策最终解释权归于深圳零度</p>
+							</div>
+							<div class="policy-title"><h3>ReXIRO服务政策</h3></div>
+							<div><strong>若客人在购买产品同时拥有深圳零度ReXIRO深度服务套餐，深圳零度承诺符合以下情况，由服务购买起1年内，深圳零度将提供更优惠的产品保修服务。</strong></div>
+							<div class="policy-title"><h3>ReXIRO保修内容</h3></div>
+							<div>
+								<p>深圳零度制定了<strong>ReXIRO深度服务套餐</strong>：深圳零度承诺给提供因我们产品原因造成的产品损坏保修外，我们还承诺因操作失误、天气气候造成的意外损坏或损失，导致飞机无法正常使用的，我们将按如下优惠进行维修。</p>
+								<p>可维修的部件及费用如下表：</p>
+								<div class="services-package">
+									<table>
+										<tr>
+											<td>机型</td>
+											<td>XPLORER</td>
+											<td>XPLORER V</td>
+											<td>XPLORER G</td>
+										</tr>
+										<tr>
+											<td>关键部位</td>
+											<td>飞控<br />电机<br />飞机壳体<br />充电器</td>
+											<td>飞控<br />电机<br />飞机壳体<br />充电器<br />中继器<br />云台主体<br />相机</td>
+											<td>飞控<br />电机<br />飞机壳体<br />充电器<br />中继器<br />云台主体</td>
+										</tr>
+										<tr>
+											<td>服务费用</td>
+											<td>375元</td>
+											<td>600元</td>
+											<td>600元</td>
+										</tr>
+										<tr>
+											<td>首次更新费用</td>
+											<td>699元</td>
+											<td>1299元</td>
+											<td>1299元</td>
+										</tr>
+										<tr>
+											<td>第二次更新费用</td>
+											<td>999元</td>
+											<td>1699元</td>
+											<td>1699元</td>
+										</tr>
+										<tr>
+											<td>第三次更新费用</td>
+											<td>1099元</td>
+											<td>1999元</td>
+											<td>1999元</td>
+										</tr>
+										<tr>
+											<td>服务内容</td>
+											<td colspan="3">
+												<div>
+													<ol class="clearfix">
+														<li>1.无人机整机检测</li>
+														<li>2.损坏部分全部更新</li>
+														<li>3.48小时服务承诺</li>
+														<li>4.全年有效三次维修</li>
+													</ol>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="policy-title"><h3>深圳零度维修响应时间</h3></div>
+							<div>
+								<p>如您需要将产品返回深圳零度工厂维修，深圳零度承诺您：在深圳零度指定售后接货方收到您的产品后48小时内，完成对您的产品的维修。</p>
+								<p><strong>注：如因用户拖延付款时间而造成维修时间延迟，此部分时间不属于上述响应承诺内；如因代理商原因积累故障品，造成批量返修，不在上述承诺维修响应承诺内。</strong></p>
+							</div>
+							<div class="policy-title"><h3>ReXIRO深度服务条款</h3></div>
+							<div class="services-article">
+								<ol>
+									<li>ReXIRO深度服务内容包括：用户可在一年内使用三次部件维修更新服务，适用于更广泛的故障范围，面向所有已购买深圳零度产品的用户；用户拥有参与深圳零度官方活动的特权；而未来ReXIRO将根据用户需求，提供更多服务内容；</li>
+									<li>如需购买ReXIRO深度服务，用户须购买或拥有XIRO零度的官方产品；</li>
+									<li>用户购买一次ReXIRO深度服务仅能对应一台产品，如需为多台产品购买服务，则需购买对应的次数；</li>
+									<li>当用户购买ReXIRO服务为标准版的费用时，若随后通过升级配件升级至V版或G版，则需补齐服务费用差额才能享受同等于V版或G版的维修内容；</li>
+									<li>若产品已购买ReXIRO服务且更新服务仍生效，可再次购买以延长服务时长；</li>
+									<li>ReXIRO服务提供自服务购买日起计算，时长一年的三次优惠更新服务，用户若在一年内已进行三次更新，则该服务自动终止，如需继续享受该服务，用户须再次支付ReXIRO深度服务费；</li>
+									<li>当ReXIRO可用更新服务次数为零或时效到期时，其他服务不受影响，用户可继续使用所需服务至原有期限；</li>
+									<li>若产品已购买ReXIRO服务且更新服务仍生效，可再次购买以延长服务时长；</li>
+									<li>ReXIRO服务中所产生的邮资运费，均由零度全部承担；</li>
+									<li>用户使用更新服务时，必须提供有效的购买凭证或单据；</li>
+									<li>使用ReXIRO深度服务须符合以下条件：<br />
+										①产品寄回时所有部件齐全，包括损坏部分以及未损坏部分；<br />
+										②机器序列号、出厂标签及其他标示无撕毁、涂改迹象；<br />
+										③提供有效的服务购买证明。<br />
+										在任何情况下，不予保障您和他人人身或者其他财产直接或者间接的损失或损害。
+									</li>
+								</ol>
+							</div>
+							<div class="policy-title"><h3>本售后服务政策最终解释权归于深圳零度</h3></div>
+						</div>
+					</div>
+				</div>
+				<!--线下服务-->
+				<div class="underline-services" style="display: none;">
+					<div class="support-search" id="search-map">
+						<form>
+							<input type="text" placeholder="" id="search-input" value="深圳零度智能飞行器有限公司"/>
+							<a href="javascript:;">搜索</a>
+						</form>
+					</div>
+					<div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+					<div class="services-box">
+						<div class="map-box">
+							<div id="mapContainer" ></div>
+						</div>
+						<div class="service-point">
+							<h3>网点</h3>
+							<!--<div id="r-result"></div>-->
+							<ul class="servicer-list"><!--新增了class -->
+								<li>
+									<div class="point-box clearfix">
+										<div class="pull-left servicer-name">深圳市华天行科技有限公司</div>
+										<div class="pull-left ser-address"  >地址：深圳市世界之窗</div>
+										<div class="pull-left ser-tel">电话：(+86) 4008 073 888</div>
+										<div class="pull-left ser-time">周一到周六&nbsp;&nbsp;AM8:30-PM17:30</div>
+									</div>
+								</li>
+								<li>
+									<div class="point-box clearfix">
+										<div class="pull-left ser-name">深圳市华天行科技有限公司</div>
+										<div class="pull-left ser-address" >地址：深圳市环球数码大厦</div>
+										<div class="pull-left ser-tel">电话：(+86) 4008 073 888</div>
+										<div class="pull-left ser-time">周一到周六&nbsp;&nbsp;AM8:30-PM17:30</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="container-fluid footer_box">
+		<div class="container struggle_footer">
+			<div class="contact_xiro">
+				<a href="aboutus.html">关于我们</a>
+				<span>|</span>
+				<a href="contact.html">联系我们</a>
+				<span>|</span>
+				<a href="javascript:void(0)">加入我们</a>
+			</div>
+			<div class="contact_way">
+				<p>
+					社交网络：
+					<a class="wechart_box" href="javascript:void(0)">
+						<span class="wechart_img_box">
+							<img src="assets/images/wechatcode.jpg" width="100%" />
+						</span>
+						<i class="icon iconfont">&#xe63b;</i>
+						微信
+					</a>
+					<a href="javascript:void(0)">
+						<i class="icon iconfont">&#xe881;</i>
+						微博
+					</a>
+					<a href="javascript:void(0)">
+						<i class="icon iconfont">&#xe634;</i>
+						TWITTER
+					</a>
+					<a href="javascript:void(0)">
+						<i class="icon iconfont">&#xe620;</i>
+						FACEBOOK
+					</a>
+					<a href="javascript:void(0)">
+						<i class="icon iconfont">&#xe82c;</i>
+						YOUTUBE
+					</a>
+				</p>
+			</div>
+			<div class="clear"></div>
+			<p class="copyright">
+				Copyright © 2015 深圳零度智能飞行器有限公司 版权所有粤ICP备15019879号-2
+				<span class="gongshang">
+					<style> .gongshang img{width:15px !important;height:24px !important;}</style>
+					<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=197fa3f7-c886-48e2-9949-148f73221f11&amp;width=36&amp;height=50&amp;type=1" charset="utf-8" type="text/javascript"></script>
+				</span>
+			</p>
+		</div>
+	</div>
+<script  type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assets/js/jcfilter.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=65a649bf81b407e141905bb449dd6271"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script type="text/javascript" src="assets/js/im-js.js"></script>
+<script type="text/javascript" src="assets/js/map.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$(".normal-choice li").click(function(){
+			var parAtrr=$(".normal-choice li.active").parent("ul").attr("name"); //获取点击的元素属于哪一个大类，比如：固件
+			var thisAtrr=$(this).attr(parAtrr); //当前元素的属性值；
+			var modAtrr=$(".type-box li.active").attr("modal"); //当前机型
+
+			var objlength=$(".download-result>div[name="+parAtrr+"] li["+parAtrr+"*="+thisAtrr+"][modal*="+modAtrr+"]").length;//alert(objlength);
+			if(objlength==0){
+				$(".download-result>div[name="+parAtrr+"] ul>li").hide();
+				$(".nullWainning").show();
+			}else{
+				$(".download-result>div[name="+parAtrr+"] ul>li").hide();
+				$(".download-result>div[name="+parAtrr+"] li["+parAtrr+"*="+thisAtrr+"][modal*="+modAtrr+"]").show();
+				$(".nullWainning").hide();
+			};
+			
+		});
+		$(".type-box li").click(function(){
+			var thisAtrr=$(this).attr("modal");//获取当前机型
+			var parAtrr=$(".normal-choice li.active").parent("ul").attr("name");//获取当前选中元素属于哪一个大类，比如：固件
+			var secAtrr=$(".normal-choice li.active").attr(parAtrr);//获取当前选中元素属性值
+			var objlength=$(".download-result>div[name="+parAtrr+"] li[modal*="+thisAtrr+"]["+parAtrr+"*="+secAtrr+"]").length;
+			if(objlength==0){
+				$(".download-result>div[name="+parAtrr+"] ul>li").hide();//当没有满足条件的元素是隐藏全部
+				$(".nullWainning").show();
+			}else{
+				$(".download-result>div[name="+parAtrr+"] ul>li").hide();
+				$(".download-result>div[name="+parAtrr+"] li[modal*="+thisAtrr+"]["+parAtrr+"*="+secAtrr+"]").show();//当有满足条件的元素是显示满足条件的元素，隐藏不满足的
+				$(".nullWainning").hide();
+			}
+
+		})
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<Guid>
+  <keystroke>按键</keystroke>
+  <tracespeed>最高追踪速度</tracespeed>
+  <maxspeed>最大速度</maxspeed>
+  <maxresolution>最大分辨率</maxresolution>
+  <workpressure>工作电压</workpressure>
+  <workcurrent>工作电流 </workcurrent>
+  <size>尺寸</size>
+  <weight>重量</weight>
+</Guid>

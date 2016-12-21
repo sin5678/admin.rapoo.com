@@ -1,0 +1,52 @@
+﻿.tabContainer
+{
+  	width:100%;
+  	background:url(../images/tab/tab.gif) repeat-x bottom;
+  	overflow:hidden;
+}
+.tabContainer ul
+{
+	list-style:none;
+}
+.tabContainer img
+{
+	border:none;
+	cursor:pointer;
+}
+.tabContainer li
+{
+  	float:left;
+  	margin-right:2px;
+  	background:url(../images/tab/tabOff_right.gif) no-repeat right top;
+}
+.tabContainer li a
+{
+  	display:block!important;
+  	display:inline-block;
+  	padding:0 15px;
+  	height:27px;
+  	line-height:27px;
+  	background:url(../images/tab/tabOff_left.gif) no-repeat left top;
+}
+.tabContainer li.currentBtn
+{
+  	background:url(../images/tab/tabOn_right.gif) no-repeat right top;
+}
+.tabContent
+{
+	width:100%;
+}
+.tabContent table
+{
+	width:100%;
+}
+#dvDistribute
+{
+	display:none;
+	min-height:30px;
+}
+#dvProfile
+{
+	display:none;
+	min-height:30px;
+}

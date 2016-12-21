@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>零度无人机</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name=apple-mobile-web-app-title content="零度无人机">
+	<meta name="Resource-type" content="Document" />
+	<link rel=apple-touch-icon-precomposed href="img/apple-touch-icon-57x57-precomposed.png" />
+	<link rel=apple-touch-startup-image sizes=768x1004 href="img/loading-768x1004.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="format-detection" content="telephone=yes"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/flysystem.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css" media="screen" />
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top struggle_top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/images/logo.png" width="70">
+			</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<div class="struggle_menu">
+						XPLORER
+						<div class="struggle_top_menuSlide" menuIndex="1">
+							<ul class="menuSlide_box">
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploer.png" width="100%" />
+										</div>
+										<span>XPLORER</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerV.png" width="100%" />
+										</div>
+										<span>XPLORER V</span>
+									</a>
+								</li>
+								<li class="line">|</li>
+								<li>
+									<a href="javascript:void(0)">
+										<div class="menu_icon_box">
+											<img src="assets/images/menu_icon_xploerG.png" width="100%" />
+										</div>
+										<span>XPLORER G</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-VG</div>
+				</li>
+				<li>
+					<div class="struggle_menu">XPLORER-X</div>
+				</li>
+				<li>
+					<a href="support.html">支持</a>
+				</li>
+				<li>
+					<a href="activity.html">活动</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">论坛</a>
+				</li>
+				<li>
+					<a href="buy.html">购买</a>
+				</li>
+				<!--<li>
+					<a class="search_box" href="javascript:void(0)">
+						<input type="text" name="search" id="search" onfocus="" placeholder="XIRO" /> <i class="search_icon icon iconfont">&#xe640;</i>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)"> <i class="icon iconfont">&#xf007c;</i>
+					</a>
+				</li>-->
+				<li class="active country_slide">
+					<a href="javascript:void(0)">
+						<div class="country_select">
+							<img src="assets/images/1_zh_cn.png" width="100%">
+						</div>
+						<div class="country_box">
+							<ul>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/1_zh_cn.png" width="100%"></div>
+									<span>简体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/2_zh_tw.png" width="100%"></div>
+									<span>繁体</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/3_english.png" width="100%"></div>
+									<span>English</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/4_german.png" width="100%"></div>
+									<span>German</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/5_french.png" width="100%"></div>
+									<span>French</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/6_italian.png" width="100%"></div>
+									<span>Italian</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/7_spanish.png" width="100%"></div>
+									<span>Spanish</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/8_korean.png" width="100%"></div>
+									<span>Korean</span>
+								</li>
+								<li>
+									<div class="country_imgBox">
+										<img src="assets/images/9_japanese.png" width="100%"></div>
+									<span>Japanese</span>
+								</li>
+							</ul>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid fnav">
+	<div class="container">
+		<div class="product-nav">
+			<div class="pro-nav-box clearfix"><div class="brand-name">XPLORER</div><a href="https://shop129829987.taobao.com/?spm=2013.1.0.0.AbQ19Q" class="gotomall">立即购买</a></div>
+			<ul class="product-nav-list">
+				<li>
+					<a href="Industriail.html">工业设计</a>
+				</li>
+				<li>
+					<a href="flySystem.html" class="active">飞行系统</a>
+				</li>
+				<li>
+					<a href="telecontroller.html" >遥控器</a>
+				</li>
+				<li>
+					<a href="webAPP.html" >APP</a>
+				</li>
+				<li>
+					<a href="productG.html#page7">云台相机</a>
+				</li>
+				<li>
+					<a href="productvideo.html" >教学视频</a>
+				</li>
+			</ul>
+			<!-- <div><a href="javascript:void">立即购买</a></div> -->
+		</div>
+	</div>
+</div>
+<div id="dowebok">
+	<div class="section section-content section1">
+		<div  class="section-box">
+			<div class="container">
+				<div class="pruduct-intro">
+					<h3 class="article-title anti-0">智能操控&nbsp;&nbsp;体验未来</h3>
+					<p class="article-describe anti-1">一架飞行器适应未来更多升级可能搭载更先进的飞控系统，实时感知飞行动态。</p>
+				</div>
+				<div class="fly_data">
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td><span class="f24">25</span>MIN</td><td><span class="f24">8</span>M/S</td><td><span class="f24">500</span>M</td><td><span class="f24">1080</span>P30</td>
+						</tr>
+						<tr>
+							<td>Flight Time</td><td>Speed</td><td>Height</td><td> Camera(V Kit)</td>
+						</tr>
+					</table>
+					<div class="fly_data_img"><img src="assets/images/flysystem/fly_section1_data.png" width="100%"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section2">
+			<div class="section2_air_projectBox">
+				<div class="content_box">
+					<h3 class="article-title anti-0">精致于形&nbsp;&nbsp;稳定如钟</h3>
+					<p class="article-describe anti-1">高效智能的飞控系统带来超前的飞行感受给你前所未有的操控体验，畅享到手即飞的真实快感。</p>
+					<div class="spaceh20"></div>
+					<div class="section2_table">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="33.3%"><span class="f24">350</span>MM</td><td><span class="f24">35°</span></td><td><span class="f24">200°</span>s</td>
+							</tr>
+							<tr>
+								<td  valign="top">Diagonal Motor-Motor  Measurment</td><td  valign="top">Max Tilt Angle</td><td  valign="top">Height</td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+		</div>
+	</div>
+	<div class="section section3">
+		<div class="struggle_box">
+			<div class="section2_air_projectBox">
+				<div class="content_box">
+					<h3 class="article-title anti-0">GPS悬停&nbsp;&nbsp;实效精准 </h3>
+					<p class="article-describe anti-1">创新内置天线设计，破除繁杂的外接天线，充分实现GPS定位悬停，体验一键起飞/降落的操控快感。</p>
+					<div class="section2_table">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="tl"><span class="f24">±0.5</span>M</td><td class="tl"><span class="f24">±1.5</span>M</td>
+							</tr>
+							<tr>
+								<td  valign="top" class="tl">Vertical Hovering Accuracy  (GPS Mode)</td><td class="tl" valign="top">Horizontal Hovering Accuracy  (GPS Mode)</td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+			<!-- <div class="section3_air_box">
+				<div class="air"><img src="assets/images/flysystem/fly_section3_xploer.png" width="100%"></div>
+				<div class="left_circle"><img src="assets/images/flysystem/fly_section3_leftCicle.png" alt=""></div>
+				<div class="right_circle"><img src="assets/images/flysystem/fly_section3_rightCicle.png" alt=""></div>
+			</div> -->
+			<!-- <div class="section3_line_box"><img src="assets/images/flysystem/fly_section3_line.png" width="100%" /></div> -->
+			<div class="section3_img_box"><img src="assets/images/flysystem/fly_section3_Cicle.png" width="100%" alt=""></div>
+		</div>
+	</div>
+	<div class="section section4">
+				<div class="section4_content_box">
+					<h3 class="article-title anti-0">航空性能&nbsp;&nbsp;安全卓越 </h3>
+					<p class="article-describe anti-1">内置IMU芯片，有效减少飞行环境带来的抖动，享受平稳飞行带来的视觉盛宴  高精度传感器，极速感知每一刻的飞行动态。</p>
+				</div>
+	</div>
+	<div class="section section5">
+		<div class="struggle_box">
+			<div class="section2_air_projectBox">
+				<div class="section2_air_projectBox">
+				<div class="content_box">
+					<h3 class="article-title anti-0">超长续航&nbsp;&nbsp;品质保障 </h3>
+					<p class="article-describe anti-1">5200mAh可替换式智能飞行电池，续航时间长达25分钟。搭载智能调控技术，当电池电量不足时，遥控器通过实时震动反馈，将每一个飞行动态都掌握在手中。</p>
+					<div class="spaceh20"></div>
+					<div class="section2_table">
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td><span class="f24">5200</span>mAh</td><td><span class="f24">25</span>MIN</td>
+							</tr>
+							<tr>
+								<td>Battery</td><td>Flight Time</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="section section6">
+		<div class="section6_struggle_box">
+			<div class="section6_content_box">
+				<h3 class="article-title anti-0">集大成者&nbsp;&nbsp;包容万象 </h3>
+				<p class="article-describe anti-1">全球先进的高精度三轴陀螺增稳云台。XPLORER G版云台具备防抖技术，即使是在微风的天气情况下，能主动抵消外界环境带来的飞行抖动，内置图片传输系统，真实感知平稳飞行带来的高清画面。</p>
+				<div class="anti-2"><a href="javascript:void" class="article-link">了解云台<i></i></a></div>
+			</div>
+			<div class="section6_img_box"><img src="assets/images/flysystem/fly_section6_xploer.png" width="100%" /></div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid footer_box" id="pageFooter">
+	<div class="container struggle_footer">
+		<div class="contact_xiro">
+			<a href="aboutus.html">关于我们</a>
+			<span>|</span>
+			<a href="contact.html">联系我们</a>
+			<span>|</span>
+			<a href="javascript:void(0)">加入我们</a>
+		</div>
+		<div class="contact_way">
+			<p>
+				社交网络：
+				<a class="wechart_box" href="javascript:void(0)">
+					<span class="wechart_img_box">
+						<img src="assets/images/wechatcode.jpg" width="100%" />
+					</span>
+					<i class="icon iconfont">&#xe63b;</i>
+					微信
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe881;</i>
+					微博
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe634;</i>
+					TWITTER
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe620;</i>
+					FACEBOOK
+				</a>
+				<a href="javascript:void(0)">
+					<i class="icon iconfont">&#xe82c;</i>
+					YOUTUBE
+				</a>
+			</p>
+		</div>
+		<div class="clear"></div>
+		<p class="copyright">
+			Copyright © 2015 深圳零度智能飞行器有限公司 版权所有粤ICP备15019879号-2
+			<span class="gongshang">
+				<style> .gongshang img{width:15px !important;height:24px !important;}</style>
+				// <script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=197fa3f7-c886-48e2-9949-148f73221f11&amp;width=36&amp;height=50&amp;type=1" charset="utf-8" type="text/javascript"></script>
+			</span>
+		</p>
+	</div>
+</div>
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		slidesNavigation:true,
+		loopHorizontal:true,
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+	});
+	function telecH(){
+		var telecW=$(".pruduct-telec").eq(0).width();
+		var winW=$(window).width();
+		if(winW>767){
+			$(".pruduct-telec").height(telecW*0.3208);
+		}else{
+			$(".pruduct-telec").height(telecW*0.7);
+		}
+	}
+	telecH();
+	$(window).resize(function(){
+		telecH();
+	});
+});
+</script>
+</body>
+</html>

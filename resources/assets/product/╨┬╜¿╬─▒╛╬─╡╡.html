@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+        产品规格
+    </title><link rel="Stylesheet" type="text/css" href="./style.css" /><link rel="Stylesheet" type="text/css" href="./product.css" />
+    <script language="javascript" type="text/javascript" src="./common.js"></script>
+    <script language="javascript" type="text/javascript" src="./jquery.min.js"></script>
+    <script language="javascript" type="text/javascript">
+        function confirmValue() {
+            var dimension = "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td>&nbsp;</td><td>&nbsp;</td>"+
+                    "</tr><tr><td class=\"bc\">料号</td><td class=\"bc\">技术规格</td></tr>";
+            var tb = document.getElementById("tbMain");
+            if (tb) {
+                dimension += "<tr>";
+                dimension += "<td>" + tb.rows[0].cells[1].children[0].value + "</td>";
+                dimension += "<td>" + getProductType() + "</td>";
+                dimension += "</tr>";
+
+                dimension += "<tr>";
+                dimension += "<td>" + tb.rows[1].cells[1].children[0].value + "</td>";
+                dimension += "<td>" + getStandard(0) + "</td>";
+                dimension += "</tr>";
+
+                dimension += "<tr>";
+                dimension += "<td class=\"bc\">系统要求</td>";
+                dimension += "<td>" + getStandard(1) + "</td>";
+                dimension += "</tr>";
+
+                dimension += "<tr>";
+                dimension += "<td>" + getSystemRequire(tb) + "</td>";
+                dimension += "<td>" + getStandard(2) + "</td>";
+                dimension += "</tr>";
+
+                dimension += "<tr>";
+                dimension += "<td>" + getInterfaceRequire(tb) + "</td>";
+                dimension += "<td>" + getStandard(3) + "</td>";
+                dimension += "</tr>";
+
+
+                dimension += "<tr>";
+                dimension += "<td class=\"bc\">包装内容</td>";
+                dimension += "<td>" + getStandard(4) + "</td>";
+                dimension += "</tr>";
+
+                dimension += getPackage(tb);
+            }
+            dimension += "</table>";
+            parent.setDimensionValue(dimension);
+        }
+        function getProductType() {
+            if ($("#radio1")[0].checked) return "鼠标";
+            if ($("#radio2")[0].checked) return "键盘";
+            if ($("#radio3")[0].checked) return "耳机";
+            if ($("#radio4")[0].checked) return "音箱";
+            if ($("#radio5")[0].checked) return "RATV";
+            return "";
+        }
+        function getSystemRequire(theObj) {
+            var sysRequire = "";
+            var tb = theObj.rows[3].cells[2].children[0];
+            for (var i = 0; i < tb.rows.length; i++) {
+                for (var j = 0; j < tb.rows[i].cells.length; j++) {
+                    if (tb.rows[i].cells[j].children[0].checked) {
+                        if (sysRequire == "")
+                            sysRequire += tb.rows[i].cells[j].children[0].value;
+                        else
+                            sysRequire += " " + tb.rows[i].cells[j].children[0].value;
+                    }
+                }
+            }
+            return sysRequire;
+        }
+        function getStandard(index,isLast) {
+            var guid = $("#tbMain tr[Guid='yes']");
+            var len = guid.length;
+            if (index > (len - 1)) return "";
+            if (isLast == null || isLast == undefined)
+                return guid[index].cells[0].innerHTML + ":" + guid[index].cells[1].children[0].value;
+            else {
+                var nTr = "";
+                for (var i = index; i < len; i++) {
+                    nTr += "<tr><td></td><td>" + guid[i].cells[0].innerHTML + ":" + guid[i].cells[1].children[0].value + "</td></tr>";
+                }
+                return nTr;
+            }
+        }
+        function getInterfaceRequire(theObj) {
+            var faceRequire = "";
+            var tb = theObj.rows[4].cells[1].children[0];
+            for (var i = 0; i < tb.rows.length; i++) {
+                for (var j = 0; j < tb.rows[i].cells.length; j++) {
+                    if (tb.rows[i].cells[j].children[0].checked) {
+                        if (faceRequire == "")
+                            faceRequire += tb.rows[i].cells[j].children[0].value;
+                        else
+                            faceRequire += " " + tb.rows[i].cells[j].children[0].value;
+                    }
+                }
+            }
+            return faceRequire;
+        }
+        function getPackage(theObj) {
+            var packageInfo = "";
+            var standPos = 0;
+            var tb = theObj.rows[6].cells[1].children[0];
+            for (var i = 0; i < tb.rows.length; i++) {
+                for (var j = 0; j < tb.rows[i].cells.length; j++) {
+                    if (tb.rows[i].cells[j].children[0].checked) {
+                        packageInfo += "<tr>";
+                        packageInfo += "<td>" + tb.rows[i].cells[j].children[0].value + "</td>";
+                        standPos = 5 + j;
+                        packageInfo += "<td>" + getStandard(standPos) + "</td>";
+                        packageInfo += "</tr>";
+                    }
+                }
+            }
+            packageInfo += getStandard(standPos + 1, true);
+            return packageInfo;
+        }
+        $(document).ready(function () {
+            var source = $("#spanProductStandard table");
+            var tb = document.getElementById("tbMain");
+            if (source && source.length>0) {
+                tb.rows[0].cells[1].children[0].children[0].children[0].children[0].children[0].value = source[0].rows[2].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[0].children[0].children[0].value = source[0].rows[2].cells[1].innerHTML;
+                tb.rows[0].cells[1].children[0].children[0].children[1].children[0].children[0].value = source[0].rows[3].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[1].children[0].children[0].value = source[0].rows[3].cells[1].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[2].children[0].children[0].value = source[0].rows[4].cells[1].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[3].children[0].children[0].value = source[0].rows[5].cells[1].innerHTML;
+                tb.rows[2].cells[1].children[0].children[0].children[0].children[0].children[0].value = source[0].rows[6].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[4].children[0].children[0].value = source[0].rows[6].cells[1].innerHTML;
+                tb.rows[2].cells[1].children[0].children[0].children[1].children[0].children[0].value = source[0].rows[7].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[5].children[0].children[0].value = source[0].rows[7].cells[1].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[6].children[0].children[0].value = source[0].rows[8].cells[1].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[7].children[0].children[0].value = source[0].rows[9].cells[1].innerHTML;
+                tb.rows[4].cells[1].children[0].children[0].children[0].children[0].children[0].value = source[0].rows[10].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[8].children[0].children[0].value = source[0].rows[10].cells[1].innerHTML;
+                tb.rows[4].cells[1].children[0].children[0].children[1].children[0].children[0].value = source[0].rows[11].cells[0].innerHTML;
+                tb.rows[6].cells[1].children[0].children[0].children[9].children[0].children[0].value = source[0].rows[11].cells[1].innerHTML;
+
+            }
+        });
+        function parseXmlFile() {
+            var xmlFile = "";
+            removeTr();
+            if ($("#radio1")[0].checked) {
+                xmlFile = "../../Template/MouseTechGuid.xml";
+            } else if ($("#radio2")[0].checked) {
+                xmlFile = "../../Template/KeyboardTechGuid.xml";
+            } else if ($("#radio3")[0].checked) {
+                xmlFile = "../../Template/MicTechGuid.xml";
+            }
+            else if ($("#radio4")[0].checked) {
+                xmlFile = "../../Template/SoundBoxGuid.xml";
+            }
+            else if ($("#radio5")[0].checked) {
+                xmlFile = "../../Template/RatvGuid.xml";
+            }
+            if (xmlFile == "") return;
+            var xmlDoc = loadXMLFile(xmlFile);
+            var tr, td;
+            var tb = document.getElementById("tbMain");
+            var elements = xmlDoc.getElementsByTagName("Guid");
+            for (var i = 0; i < elements.length; i++) {
+                document.getElementById("tdTech").rowSpan = elements[i].childNodes.length + 1;
+                for (var j = 0; j < elements[i].childNodes.length; j++) {
+                    tr = tb.insertRow(tb.rows.length - 1);
+                    tr.Guid = "yes";
+                    td = tr.insertCell();
+                    td.innerHTML = elements[i].childNodes[j].childNodes[0].nodeValue;
+                    td = tr.insertCell();
+                    td.innerHTML = "<input type=\"text\" class=\"InputBox\"/>";
+                }
+            }
+        }
+        function removeTr() {
+            var guid = $("#tbMain tr[Guid='yes']");
+            var tb = document.getElementById("tbMain");
+            for (var i = 0; i < guid.length; i++) {
+                tb.deleteRow($(guid[i]).index());
+            }
+        }
+        $(document).ready(function () {
+            parseXmlFile();
+        });
+    </script>
+</head>
+<body>
+<form method="post" action="./ProductDimensionEx.aspx" id="form1" style="overflow:auto;">
+    <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTk5ODkyMDM4ZGRZ79zRjn+gLnqkTUWyxvA6kN24IjsSC4bl0bPaDAKSAA==" />
+    </div>
+
+    <div class="aspNetHidden">
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BA854277" />
+    </div>
+    <div>
+        <table border="0" cellspacing="2" cellpadding="2" style="width:100%;" id="tbMain">
+            <tr>
+                <td class="bc" style="width:100px;">
+                    料号
+                </td>
+                <td colspan="2"><input type="text" class="InputBox100" /></td>
+            </tr>
+            <tr>
+                <td>质量保证</td>
+                <td colspan="2"><input type="text" class="InputBox100" /></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-bottom:1px solid #b2bac5; border-left:none; border-top:none; border-right:none; padding-top:1px;" >
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    系统需求
+                </td>
+                <td style="width:80px;">操作系统</td>
+                <td>
+                    <table cellpadding="1" cellspacing="1" border="0">
+                        <tr>
+                            <td><input type="checkbox" value="Windows XP" id="chb1" onfocus="this.blur();"/><label for="chb1">Windows XP</label></td>
+                            <td><input type="checkbox" value="Windows Vista" id="chb2" onfocus="this.blur();"/><label for="chb2">Windows Vista</label></td>
+                            <td><input type="checkbox" value="Windows 7" id="chb3" onfocus="this.blur();"/><label for="chb3">Windows 7</label></td>
+                            <td><input type="checkbox" value="Windows 8" id="chb4" onfocus="this.blur();"/><label for="chb4">Windows 8</label></td>
+
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="Windows 2000" id="chb5" onfocus="this.blur();"/><label for="chb5">Windows 2000</label></td>
+                            <td><input type="checkbox" value="Mac OS x v10.2.8或更高版本" id="chb6" onfocus="this.blur();"/><label for="chb6">Mac OS x v10.2.8或更高版本</label></td>
+                            <td><input type="checkbox" value="Chrome OS" id="chb7" onfocus="this.blur();"/><label for="chb7">Chrome OS</label></td>
+                            <td><input type="checkbox" value="Apple 系PC" id="chb8" onfocus="this.blur();"/><label for="chb8">Apple 系PC</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:80px;">连接技术</td>
+                <td>
+                    <table cellpadding="1" cellspacing="1" border="0">
+                        <tr>
+                            <td><input type="checkbox" value="USB接口" id="chb9" onfocus="this.blur();"/><label for="chb9">USB接口</label></td>
+                            <td><input type="checkbox" value="PS/2接口" id="chb10" onfocus="this.blur();"/><label for="chb10">PS/2接口</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-bottom:1px solid #b2bac5; border-left:none; border-top:none; border-right:none; padding-top:1px;" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    包装内容
+                </td>
+                <td colspan="2">
+                    <table cellpadding="1" cellspacing="1" border="0">
+                        <tr>
+                            <td><input type="checkbox" value="USB适配器" id="chb11" onfocus="this.blur();"/><label for="chb11">USB适配器</label></td>
+                            <td><input type="checkbox" value="用户文档" id="chb12" onfocus="this.blur();"/><label for="chb12">用户文档</label></td>
+                            <td><input type="checkbox" value="产品说明书" id="chb13" onfocus="this.blur();"/><label for="chb13">产品说明书</label></td>
+                            <td><input type="checkbox" value="保修服务卡" id="chb14" onfocus="this.blur();"/><label for="chb14">保修服务卡</label></td>
+                            <td><input type="checkbox" value="AAA碱性电池" id="chb15" onfocus="this.blur();"/><label for="chb15">AAA碱性电池</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <hr style="color: #b2bac5;width:99.5%;height:1px;font-size:1px; margin-top:1px;" />
+                </td>
+            </tr>
+            <tr>
+                <td id="tdTech">
+                    技术规格
+                </td>
+                <td colspan="2">
+                    <table cellpadding="2" cellspacing="2" border="0">
+                        <tr>
+                            <td><input type="radio" name="rad" id="radio1" onclick="parseXmlFile();" onfocus="this.blur();"/><label for="radio1">鼠标</label></td>
+                            <td><input type="radio" name="rad" id="radio2" onclick="parseXmlFile();" onfocus="this.blur();"/><label for="radio2">键盘</label></td>
+                            <td><input type="radio" name="rad" id="radio3" checked onclick="parseXmlFile();" onfocus="this.blur();"/><label for="radio3">耳机</label></td>
+                            <td><input type="radio" name="rad" id="radio4" onclick="parseXmlFile();" onfocus="this.blur();"/><label for="radio4">音箱</label></td>
+                            <td><input type="radio" name="rad" id="radio5" onclick="parseXmlFile();" onfocus="this.blur();"/><label for="radio5">RATV</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;" colspan="3">
+                    <input type="button" value="确定" class="btnConfirm" onfocus="this.blur();" onclick="confirmValue();"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <span id="spanProductStandard" style="display:none;"></span>
+</form>
+</body>
+</html>
